@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
-import profileImage from "figma:asset/85f10f24230b462e73db297ab7c343025d9efc6f.png";
 
 export function Home() {
   const skills = [
