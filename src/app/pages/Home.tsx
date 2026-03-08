@@ -121,7 +121,7 @@ export function Home() {
               {/* Social Links */}
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://asthabathla1997.github.io/portfolio-/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 hover:text-blue-600 transition-all"
@@ -129,7 +129,7 @@ export function Home() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://linkedin.com/in/asthabathla"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-lg bg-slate-100 hover:bg-slate-200 flex items-center justify-center text-slate-700 hover:text-blue-600 transition-all"
