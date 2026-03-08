@@ -69,42 +69,20 @@ export function Projects() {
     },
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
-  };
-
   return (
-    <div className="min-h-screen py-12 px-6">
+    <div className="min-h-screen py-12 px-6 bg-slate-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl font-bold text-slate-900 mb-6">
             Featured Projects
           </h1>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             A showcase of my work in data analysis, engineering, and business
             intelligence. Each project demonstrates my commitment to delivering
             impactful solutions.
@@ -112,25 +90,18 @@ export function Projects() {
         </motion.div>
 
         {/* Projects Grid */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
-											
-																
-              whileHover={{ y: -10 }}
-              className="bg-slate-800/50 rounded-2xl shadow-lg overflow-hidden border border-slate-700 hover:shadow-2xl hover:shadow-blue-500/10 transition-all backdrop-blur-sm"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              whileHover={{ y: -5 }}
+              className="bg-white rounded-2xl shadow-sm hover:shadow-xl overflow-hidden border border-slate-200 transition-all"
             >
               {/* Gradient Header */}
-              <div
-                className={`h-2 bg-gradient-to-r ${project.color}`}
-              ></div>
+              <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
 
               <div className="p-8">
                 {/* Icon */}
@@ -141,18 +112,18 @@ export function Projects() {
                 </div>
 
                 {/* Title & Description */}
-                <h3 className="text-2xl font-bold text-white mb-3">
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">
                   {project.title}
                 </h3>
-                <p className="text-slate-400 mb-6 leading-relaxed">
+                <p className="text-slate-600 mb-6 leading-relaxed">
                   {project.description}
                 </p>
 
                 {/* Metrics */}
-                <div className="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-slate-700">
+                <div className="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-slate-200">
                   {project.metrics.map((metric, idx) => (
                     <div key={idx} className="text-center">
-                      <div className="text-sm font-semibold text-white">
+                      <div className="text-sm font-semibold text-slate-900">
                         {metric.split(" ")[0]}
                       </div>
                       <div className="text-xs text-slate-500">
@@ -167,7 +138,7 @@ export function Projects() {
                   {project.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="px-3 py-1 bg-slate-700/50 text-slate-300 text-sm rounded-full border border-slate-600"
+                      className="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full border border-slate-200"
                     >
                       {tag}
                     </span>
@@ -176,34 +147,34 @@ export function Projects() {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <Button variant="default" className="flex-1 gap-2 bg-blue-600 hover:bg-blue-700">
+                  <Button variant="default" className="flex-1 gap-2">
                     <ExternalLink className="w-4 h-4" />
                     View Project
                   </Button>
-                  <Button variant="outline" size="icon" className="border-slate-700 hover:border-slate-600 bg-slate-800 hover:bg-slate-700 text-white">
+                  <Button variant="outline" size="icon">
                     <Github className="w-4 h-4" />
                   </Button>
                 </div>
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {/* Bottom CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20 text-center bg-slate-800/50 p-12 rounded-2xl shadow-lg border border-slate-700 backdrop-blur-sm"
+          className="mt-20 text-center bg-white p-12 rounded-2xl shadow-sm border border-slate-200"
         >
-          <h2 className="text-3xl font-bold text-white mb-4">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4">
             Interested in Collaborating?
           </h2>
-          <p className="text-lg text-slate-400 mb-8">
+          <p className="text-lg text-slate-600 mb-8">
             I'm always open to discussing new projects and opportunities
           </p>
-          <Button size="lg" className="text-lg px-8 bg-blue-600 hover:bg-blue-700">
+          <Button size="lg">
             Let's Connect
           </Button>
         </motion.div>
