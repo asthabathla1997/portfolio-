@@ -71,7 +71,7 @@ export function Home() {
             >
               <div className="relative">
                 <img
-                  src=""
+                  src="src/app/components/54993169380_61d54ebd0c_o.jpg"
                   alt="Profile"
                   className="w-72 h-72 rounded-2xl object-cover shadow-2xl"
                 />
