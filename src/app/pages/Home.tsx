@@ -94,7 +94,6 @@ export function Home() {
               <h1 className="text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Hi, I'm{" "}
                 <a
-                  href="https://github.com/yourusername"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300 border-b-2 border-blue-600/30 hover:border-blue-600"
