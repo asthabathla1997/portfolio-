@@ -88,7 +88,7 @@ export function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="md:col-span-3"
             >
-              <p className="text-blue-600 font-semibold mb-4 text-sm uppercase tracking-wider">
+              <p className="bg-gradient-to-r from-blue-500 to-cyan-500 font-semibold mb-4 text-sm uppercase tracking-wider">
                 Data Analyst/Analyst Engineer
               </p>
               <h1 className="text-5xl font-bold text-slate-900 mb-6 leading-tight">
