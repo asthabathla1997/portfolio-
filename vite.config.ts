@@ -23,5 +23,5 @@ export default defineConfig({
   // Set base path for GitHub Pages
   // If deploying to https://<USERNAME>.github.io/<REPO>/, set base to '/<REPO>/'
   // If deploying to https://<USERNAME>.github.io/, set base to '/'
-  base: './',
+  base: '/portfolio-/',
 })
