@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Link } from "react-router";
+import profileImage from "../components/54993169380_61d54ebd0c_o.jpg";
 
 export function Home() {
   const skills = [
@@ -71,7 +72,7 @@ export function Home() {
             >
               <div className="relative">
                 <img
-                  src="src/app/components/54993169380_61d54ebd0c_o.jpg"
+                  src={profileImage}
                   alt="Profile"
                   className="w-72 h-72 rounded-2xl object-cover shadow-2xl"
                 />
