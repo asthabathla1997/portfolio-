@@ -89,7 +89,7 @@ export function Home() {
               className="md:col-span-3"
             >
               <p className="text-blue-600 font-semibold mb-4 text-sm uppercase tracking-wider">
-                Analyst Engineer
+                Data Analyst/Analyst Engineer
               </p>
               <h1 className="text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Hi, I'm{" "}
@@ -99,7 +99,7 @@ export function Home() {
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all duration-300 border-b-2 border-blue-600/30 hover:border-blue-600"
                 >
-                  Your Name
+                  Astha Bathla
                 </a>
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
@@ -241,17 +241,17 @@ export function Home() {
                 <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                   <MapPin className="w-5 h-5 text-blue-600 mb-2" />
                   <h3 className="font-semibold text-slate-900 mb-1">Location</h3>
-                  <p className="text-slate-600 text-sm">San Francisco, CA</p>
+                  <p className="text-slate-600 text-sm">Melbourne, Australia</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                   <Mail className="w-5 h-5 text-purple-600 mb-2" />
                   <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                  <p className="text-slate-600 text-sm">your.email@example.com</p>
+                  <p className="text-slate-600 text-sm">asthabathla1997@gmail.com</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                   <Code2 className="w-5 h-5 text-pink-600 mb-2" />
                   <h3 className="font-semibold text-slate-900 mb-1">Specialties</h3>
-                  <p className="text-slate-600 text-sm">Python • SQL • React • ML</p>
+                  <p className="text-slate-600 text-sm">Python • SQL • Pyspark • Power BI • ML</p>
                 </div>
               </div>
             </div>
